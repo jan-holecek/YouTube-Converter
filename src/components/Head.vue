@@ -5,7 +5,6 @@
     <p>Stahujte a převádějte videa do MP3 z Youtube</p>
   <div class="search-box" id="SBox">
     <div class="error">
-
     </div>
     <input id="search" placeholder="Sem vložte odkaz..." type="text" required>
   </div>
@@ -22,7 +21,7 @@
 </template>
 
 <script>
-const $ = require('jquery')
+const $ = require('jquery');
 
 export default {
   name: 'Head',
@@ -34,13 +33,18 @@ export default {
     let link = $("#search").val();
     let format = $(".form-control").children("option:selected").val();
     format = "mp3";
+    let youtubeUrl1 = "youtu.be";
+    let youtubeUrl2 = "youtube.com";
 
   if(link === "") {
     $('.error').html('<p style="font-size: 15px;color: rgb(255, 0, 0);text-align: center;" class="error-msg">Zadejte platný odkaz na video</p>');
     $('.buttons').css("top", "20px");
-  } else {
+  } else if(link.includes(youtubeUrl1) || link.includes(youtubeUrl2)) {
     $('.error').html('');
     downloadVideo(link,format);
+  } else {
+    $('.error').html('<p style="font-size: 15px;color: rgb(255, 0, 0);text-align: center;" class="error-msg">Zadejte platný odkaz na video</p>');
+    $('.buttons').css("top", "20px");
   }
   
   });
