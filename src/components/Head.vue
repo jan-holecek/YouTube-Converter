@@ -76,7 +76,6 @@ header {
   width: 100%;
   height: 80vh;
   min-height: 18rem;
-  /* -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%); */
   z-index: 0;
 }
 
