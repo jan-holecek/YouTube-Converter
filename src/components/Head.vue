@@ -6,7 +6,7 @@
   <div class="search-box" id="SBox">
     <input id="search" placeholder="Sem vložte odkaz..." type="text" required>
   </div>
-    <select class="form-control format">
+    <select class="form-control format" required>
       <option selected disabled>Formát</option>
       <option value="mp3">Mp3</option>
     </select>
