@@ -11,7 +11,7 @@
 			<li class="card-item grid-item grid-third">
 				<div class="card-info">
 					<h3 class="Class-title">2. Paste URL to field</h3>
-					<p>Paste the copied URL into the box above. Click on the search icon and wait for a while.</p>
+					<p>Paste the copied URL into the box above and select MP3 format. Click the SEND button and wait for a while.</p>
 				</div>
 			</li>
 			<li class="card-item grid-item grid-third">
