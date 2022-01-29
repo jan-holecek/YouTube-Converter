@@ -6,18 +6,11 @@
   <div class="search-box" id="SBox">
     <input id="search" placeholder="Paste link here..." type="text" required>
   </div>
-    <select class="form-control format" required>
+    <select class="form-control format">
       <option selected disabled>Format</option>
       <option value="mp3">Mp3</option>
-      <option value="mp4a">144 Mp4</option>
-      <option value="360">360 Mp4</option>
-      <option value="480">480 Mp4</option>
-      <option value="720">720 Mp4</option>
-      <option value="1080">1080 Mp4</option>
-      <option value="4k">4k Mp4</option>
-      <option value="8k">8k Mp4</option>
     </select>
-  <button class="also search-link" id="searchclick">Send</button>
+  <button class="also search-link send" id="searchclick">Send</button>
   <div class="message"></div>
 </div>
 </header>
