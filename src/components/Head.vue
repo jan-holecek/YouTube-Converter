@@ -21,10 +21,30 @@
 </template>
 
 <script>
+const $ = require('jquery')
+
 export default {
   name: 'Head',
   props: {
     msg: String
+  },
+  mounted() {
+  $(".also").click(function(){
+    let link = $("#search").val();
+    let format = $(".form-control").children("option:selected").val();
+    format = "mp3";
+
+  if(link === "") {
+    $('.error').html('<p style="  font-size: 15px;color: rgb(255, 0, 0);position: relative;left: 50%;transform: translateX(-66%);" class="error-msg">Zadejte platný odkaz na video</p>');
+  } else {
+    $('.error').html('');
+    downloadVideo(link,format);
+  }
+  
+  });
+  function downloadVideo(link,format) {
+    $('.message').html('<iframe href="#" style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+format+'"></iframe>');
+  }
   }
 }
 </script>
