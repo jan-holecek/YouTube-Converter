@@ -4,14 +4,18 @@
     <h1>YouTube downloader</h1>
     <p>Stahujte a převádějte videa do MP3 z Youtube</p>
   <div class="search-box" id="SBox">
+    <div class="error">
+    </div>
     <input id="search" placeholder="Sem vložte odkaz..." type="text" required>
   </div>
-    <select class="form-control format" required>
+  <div class="buttons">
+    <select class="form-control format">
       <option selected disabled>Formát</option>
       <option value="mp3">Mp3</option>
     </select>
   <button class="also search-link send" id="searchclick">Odeslat</button>
   <div class="message"></div>
+  </div>
 </div>
 </header>
 </template>
@@ -71,7 +75,6 @@ header .head-message h1 {
 
 header .head-message p {
   font-size: 15px;
-  color: white;
 }
 
 header .head-message h2 {
