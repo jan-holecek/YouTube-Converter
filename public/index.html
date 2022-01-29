@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="favicon.png" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+  <div id="app"></div>
+</body>
+
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</html>
+
+
+<script type="text/javascript">
+$(".also").click(function(){
+  let link = $("#search").val();
+  let format = $(".form-control").children("option:selected").val();
+  let src = ""+link+"="+format+"";
+  downloadVideo(link,format);
+});
+function downloadVideo(link,fromate) {
+  $('.message').html('<iframe href="#" style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
+}
+</script>
