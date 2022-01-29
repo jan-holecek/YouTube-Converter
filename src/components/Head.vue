@@ -5,6 +5,7 @@
     <p>Stahujte a převádějte videa do MP3 z Youtube</p>
   <div class="search-box" id="SBox">
     <div class="error">
+
     </div>
     <input id="search" placeholder="Sem vložte odkaz..." type="text" required>
   </div>
