@@ -35,7 +35,8 @@ export default {
     format = "mp3";
 
   if(link === "") {
-    $('.error').html('<p style="  font-size: 15px;color: rgb(255, 0, 0);position: relative;left: 50%;transform: translateX(-66%);" class="error-msg">Zadejte platný odkaz na video</p>');
+    $('.error').html('<p style="font-size: 15px;color: rgb(255, 0, 0);text-align: center;" class="error-msg">Zadejte platný odkaz na video</p>');
+    $('.buttons').css("top", "20px");
   } else {
     $('.error').html('');
     downloadVideo(link,format);
@@ -68,6 +69,10 @@ select {
   margin: 0 auto;
   top: 50px;
   margin-right: 50px;
+}
+
+.buttons {
+  position: relative;
 }
 
 header {
