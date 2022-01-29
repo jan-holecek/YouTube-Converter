@@ -1,4 +1,4 @@
-# yt-converter
+# YouTube-Converter
 
 ## Project setup
 ```
