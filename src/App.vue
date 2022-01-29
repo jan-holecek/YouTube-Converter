@@ -2,7 +2,7 @@
   <router-view/>
 </template>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +17,6 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 5px;
-}
-      
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-      
-::-webkit-scrollbar-thumb {
-  background: #48bb78;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #2da15e;
+  display: none;
 }
 </style>
